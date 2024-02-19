@@ -3,12 +3,17 @@ main{
     justify-content: center;
     align-items: center;
     min-height: 700px;
+    background-color: blue;
 }
 
 #section-login{
     height: 100%;
     width: 400px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(79, 79, 212);
     padding: 10px 20px;
+    background-color: black;
+}
+h2{
+    color: white;
 }
