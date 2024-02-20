@@ -5,3 +5,9 @@ footer{
     height: 100px;
     padding-top: 30px;
 }
+img{
+    height: 50px;
+    width: 50px; 
+    float: left;
+    margin-left: 20px;
+  }

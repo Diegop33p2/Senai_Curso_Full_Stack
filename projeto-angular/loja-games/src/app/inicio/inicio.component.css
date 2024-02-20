@@ -13,7 +13,7 @@ main{
 h2{
     text-align: center;
     font-size: 30px;
-    margin-top: 5px;
+    margin-top: 12px;
 }
 
 .example-card {
@@ -33,7 +33,7 @@ h2{
   mat-grid-tile{
     padding: 2px;
     border-radius: 30px;
-    
+    box-shadow: 8px -5px blue;
 }
 
 mat-card-header{
@@ -51,6 +51,12 @@ mat-card-actions{
   mat-card-actions p{
     color: red;
     font-size: 30px;
+  }
+  
+  mat-card-actions button{
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
   }
 
   mat-card img{
