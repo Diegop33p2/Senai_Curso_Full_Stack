@@ -1,0 +1,25 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "produto": "Jogo 1",
+      "descricao": "Descrição sobre o jogo",
+      "foto": "fifa24.jpg",
+      "preco": 300
+    },
+    {
+      "id": "2",
+      "produto": "Jogo 2",
+      "descricao": "Descrição sobre o jogo",
+      "foto": "god of war.jpg",
+      "preco": 300
+    },
+    {
+      "id": "3",
+      "produto": "Jogo 3",
+      "descricao": "Descrição sobre o jogo",
+      "foto": "cod.jpg",
+      "preco": 300
+    }
+  ]
+}
