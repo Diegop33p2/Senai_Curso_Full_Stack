@@ -42,63 +42,26 @@
 
     <h2>Jogos Mais Vendidos </h2>
     <mat-grid-list cols="3">
-        <mat-grid-tile>
+        <mat-grid-tile *ngFor="let produto of produtos">
             <mat-card class="example-card">
-                <img mat-card-image src="./assets/img/fifa24.jpg" alt="Jogo 1">
+                <img mat-card-image src="./assets/img/{{produto.foto}}" alt="Jogo 1">
         
                 <mat-card-header>
-                  <mat-card-title>FIFA 24</mat-card-title>
+                  <mat-card-title>{{produto.produto}}</mat-card-title>
                 </mat-card-header>
                 
                 <mat-card-content>
                   <p>
-                    Jogo do ano na modalidade Esportes
+                    {{produto.descricao}}
                   </p>
                 </mat-card-content>
                 <mat-card-actions>
-                  <p>R$ 300,00</p>
+                  <p>{{produto.preco | currency : 'BRL'}}</p>
                   <button mat-button>Comprar</button>
                 </mat-card-actions>
               </mat-card>
         </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="./assets/img/cod.jpg" alt="Jogo 2">
         
-                <mat-card-header>
-                  <mat-card-title>CALL OF DUTY</mat-card-title>
-                </mat-card-header>
-                
-                <mat-card-content>
-                  <p>
-                    Jogo do ano na modalidade Tiros
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  <p>R$ 200,00</p>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="./assets/img/god of war.jpg" alt="Jogo 3">
-        
-                <mat-card-header>
-                  <mat-card-title>GOD OF WAR</mat-card-title>
-                </mat-card-header>
-                
-                <mat-card-content>
-                  <p>
-                    Jogo do ano na modalidade Ação e Aventura
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  <p>R$ 400,00</p>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
       </mat-grid-list>
       
 

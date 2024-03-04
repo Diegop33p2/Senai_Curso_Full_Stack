@@ -10,8 +10,8 @@
                   <th scope="col">Excluir</th>
                 </tr>
           </thead>
-    <!--   <tbody>
-            <tr *ngFor="let p of produtos">
+      <tbody>
+           <tr *ngFor="let p of produtos">
                   <th scope="row">{{p.id}}</th>
                   <td>{{p.produto}}</td>
                   <td>{{p.descricao}}</td>
@@ -20,5 +20,5 @@
                   <td><a class="btn btn-primary" routerLink="/restrito/editar/{{p.id}}" role="button">Editar</a></td>
                   <td><a class="btn btn-danger" role="button" (click)="excluir(p.id)">Excluir</a></td>
                 </tr>
-          </tbody> -->
+          </tbody>
 </table>
