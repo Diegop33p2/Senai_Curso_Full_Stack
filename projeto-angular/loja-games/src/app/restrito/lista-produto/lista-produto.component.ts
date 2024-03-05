@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from 'src/app/login.service';
 import { Produto } from 'src/app/models/Produto.models';
 import { ProdutoService } from 'src/app/produto.service';
 
@@ -12,15 +13,16 @@ export class ListaProdutoComponent implements OnInit {
   
   public produtos: Produto[] = [];
 
-  constructor(private _produtoService:ProdutoService, private _rounter: Router){ //Injeção de Dependencia
+  constructor(private _produtoService:ProdutoService, private _rounter: Router, private _loginService: LoginService){ //Injeção de Dependencia
 }
   
   ngOnInit(): void {
     this.listarProdutos();
+    this._loginService.setMostraMenu(false);
   }
   listarProdutos():void{
     this._produtoService.getProdutos().subscribe(
-      retornaProduto =>{ 
+      retornaProduto =>{
         this.produtos = retornaProduto.map(
           item => {
             return new Produto(

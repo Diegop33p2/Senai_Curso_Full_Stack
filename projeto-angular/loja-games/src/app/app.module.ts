@@ -27,7 +27,6 @@ import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-p
 import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
 import { MenuProdutoComponent } from './restrito/menu-produto/menu-produto.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

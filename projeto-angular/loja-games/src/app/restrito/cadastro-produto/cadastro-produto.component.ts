@@ -7,7 +7,7 @@ import { ProdutoService } from 'src/app/produto.service';
   selector: 'app-cadastro-produto',
   templateUrl: './cadastro-produto.component.html',
   styleUrls: ['./cadastro-produto.component.css']
-})
+}) 
 export class CadastroProdutoComponent {
 
   public produto: Produto = new Produto(0,"","","",0);
