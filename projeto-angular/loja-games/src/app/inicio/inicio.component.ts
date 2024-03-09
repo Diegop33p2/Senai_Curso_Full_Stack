@@ -31,9 +31,9 @@ export class InicioComponent implements OnInit {
               item.preco
             );
           }
-        );
+        )
       }
-    );
+    )
   }
 
 

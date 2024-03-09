@@ -18,7 +18,7 @@ export class CadastroProdutoComponent {
     this._produtoService.cadastrarProduto(this.produto).subscribe(
       produto => {
         this.produto = new Produto(0,"","","",0);
-        alert("Cadastrado com sucesso!")
+        alert("Cadastrado com sucesso!");
       },
       err => {
         alert("Erro ao Cadastrar")
